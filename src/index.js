@@ -1,14 +1,13 @@
 import dotenv from "dotenv"
 import express from "express"
+import taskRoutes from "./routes/taskRoutes.js"
 
 dotenv.config()
 
 const app = express()
 app.use(express.json())
 
-app.get("/", (req, res) => {
-  res.send("API de integração com Clickup no ar")
-})
+app.use(taskRoutes)
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
