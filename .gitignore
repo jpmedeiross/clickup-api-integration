@@ -9,3 +9,5 @@ prisma/dev.db
 # Editor
 .vscode
 .DS_Store
+
+/src/generated/prisma
