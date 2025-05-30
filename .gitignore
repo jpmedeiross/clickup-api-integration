@@ -1,0 +1,11 @@
+# Node
+node_modules
+.env
+
+# Prisma
+prisma/dev.db
+.prisma
+
+# Editor
+.vscode
+.DS_Store
