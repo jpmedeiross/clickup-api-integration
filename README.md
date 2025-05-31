@@ -82,7 +82,7 @@ API em Node.js que integra com a plataforma [ClickUp](https://clickup.com/) para
 
 Você pode importar rapidamente nossa collection de testes:
 
-📥 [Clique aqui para baixar a collection](./clickup-api.postman_collection.json)
+📥 [Clique aqui para baixar a collection](./docs/clickup-api.postman_collection.json)
 
 ### Como usar:
 
