@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "aa28538e-12f0-4614-bf81-cbc2b0e54c9f",
+		"name": "clickup-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39258512"
+	},
+	"item": [
+		{
+			"name": "Buscar Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2612"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a34-7Nd4T30xhe67iKfLOenO/ltzNmE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 31 May 2025 03:17:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"cmbbnv2he0000ts8sxha2msss\",\n        \"clickupId\": \"86a92q9ua\",\n        \"title\": \"titulo123\",\n        \"description\": \"Descrição opcional\",\n        \"status\": \"to do\",\n        \"startDate\": \"2025-06-01T04:00:00.000Z\",\n        \"dueDate\": \"2025-06-05T04:00:00.000Z\",\n        \"createdAt\": \"2025-05-31T03:17:04.466Z\",\n        \"updatedAt\": \"2025-05-31T03:17:22.367Z\"\n    },\n    {\n        \"id\": \"cmbbmodpf000dtsxw1oy331gr\",\n        \"clickupId\": \"86a92pq1u\",\n        \"title\": \"titulo1233333\",\n        \"description\": \"Descrição legal\",\n        \"status\": \"to do\",\n        \"startDate\": null,\n        \"dueDate\": null,\n        \"createdAt\": \"2025-05-31T02:43:52.803Z\",\n        \"updatedAt\": \"2025-05-31T03:17:22.367Z\"\n    },\n    {\n        \"id\": \"cmbbmndxj000ctsxwmveqrdvq\",\n        \"clickupId\": \"86a92ppuh\",\n        \"title\": \"onlyTitle\",\n        \"description\": null,\n        \"status\": \"to do\",\n        \"startDate\": null,\n        \"dueDate\": null,\n        \"createdAt\": \"2025-05-31T02:43:06.440Z\",\n        \"updatedAt\": \"2025-05-31T03:17:22.368Z\"\n    },\n    {\n        \"id\": \"cmbbmn31u000btsxwh64x6khh\",\n        \"clickupId\": \"86a92ppr1\",\n        \"title\": \"titulo123\",\n        \"description\": null,\n        \"status\": \"to do\",\n        \"startDate\": null,\n        \"dueDate\": null,\n        \"createdAt\": \"2025-05-31T02:42:52.339Z\",\n        \"updatedAt\": \"2025-05-31T03:17:22.368Z\"\n    },\n    {\n        \"id\": \"cmbbmmgmz000atsxw6zo9hrji\",\n        \"clickupId\": \"86a92ppky\",\n        \"title\": \"Minha nova tarefa\",\n        \"description\": \"Descrição opcional\",\n        \"status\": \"to do\",\n        \"startDate\": \"2025-06-01T04:00:00.000Z\",\n        \"dueDate\": \"2025-06-05T04:00:00.000Z\",\n        \"createdAt\": \"2025-05-31T02:42:23.291Z\",\n        \"updatedAt\": \"2025-05-31T03:17:22.368Z\"\n    },\n    {\n        \"id\": \"cmbbmme7u0009tsxwe13ivf3y\",\n        \"clickupId\": \"86a92ppkg\",\n        \"title\": \"Minha nova tarefa\",\n        \"description\": \"Descrição opcional\",\n        \"status\": \"to do\",\n        \"startDate\": \"2025-06-01T04:00:00.000Z\",\n        \"dueDate\": \"2025-06-05T04:00:00.000Z\",\n        \"createdAt\": \"2025-05-31T02:42:20.155Z\",\n        \"updatedAt\": \"2025-05-31T03:17:22.368Z\"\n    },\n    {\n        \"id\": \"cmbbmmcmw0008tsxwyzzkhrbf\",\n        \"clickupId\": \"86a92ppk1\",\n        \"title\": \"Minha nova tarefa\",\n        \"description\": \"Descrição opcional\",\n        \"status\": \"to do\",\n        \"startDate\": \"2025-06-01T04:00:00.000Z\",\n        \"dueDate\": \"2025-06-05T04:00:00.000Z\",\n        \"createdAt\": \"2025-05-31T02:42:18.104Z\",\n        \"updatedAt\": \"2025-05-31T03:17:22.368Z\"\n    },\n    {\n        \"id\": \"cmbbmct9w0005tsxw3okwns8p\",\n        \"clickupId\": \"86a92pm8a\",\n        \"title\": \"teste 123\",\n        \"description\": null,\n        \"status\": \"to do\",\n        \"startDate\": null,\n        \"dueDate\": null,\n        \"createdAt\": \"2025-05-31T02:34:53.108Z\",\n        \"updatedAt\": \"2025-05-31T03:17:22.368Z\"\n    },\n    {\n        \"id\": \"cmbblcy0s0000tsnkfo9ffk4p\",\n        \"clickupId\": \"86a92p9ww\",\n        \"title\": \"Minha nova tarefa\",\n        \"description\": \"Descrição opcional\",\n        \"status\": \"to do\",\n        \"startDate\": \"2025-06-01T04:00:00.000Z\",\n        \"dueDate\": \"2025-06-05T04:00:00.000Z\",\n        \"createdAt\": \"2025-05-31T02:06:59.644Z\",\n        \"updatedAt\": \"2025-05-31T03:17:22.368Z\"\n    },\n    {\n        \"id\": \"cmbbm79g50000tsxw39fgd7fa\",\n        \"clickupId\": \"86a92mnmn\",\n        \"title\": \"teste 123\",\n        \"description\": null,\n        \"status\": \"to do\",\n        \"startDate\": null,\n        \"dueDate\": null,\n        \"createdAt\": \"2025-05-31T02:30:34.134Z\",\n        \"updatedAt\": \"2025-05-31T03:17:22.368Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Cria Task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"titulo123\",\r\n  \"description\": \"Descrição opcional\",\r\n  \"status\": \"to do\",\r\n  \"startDate\": \"2025-06-01T08:00:00.000Z\",\r\n  \"dueDate\": \"2025-06-05T17:00:00.000Z\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201 Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"titulo123\",\r\n  \"description\": \"Descrição opcional\",\r\n  \"status\": \"to do\",\r\n  \"startDate\": \"2025-06-01T08:00:00.000Z\",\r\n  \"dueDate\": \"2025-06-05T17:00:00.000Z\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "286"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11e-I0l/s8hEf6Um7CTeMs5ablEK48w\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 31 May 2025 03:17:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"cmbbnv2he0000ts8sxha2msss\",\n    \"clickupId\": \"86a92q9ua\",\n    \"title\": \"titulo123\",\n    \"description\": \"Descrição opcional\",\n    \"status\": \"to do\",\n    \"startDate\": \"2025-06-01T04:00:00.000Z\",\n    \"dueDate\": \"2025-06-05T04:00:00.000Z\",\n    \"createdAt\": \"2025-05-31T03:17:04.466Z\",\n    \"updatedAt\": \"2025-05-31T03:17:04.466Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Deletar Task",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Minha nova tarefa\",\r\n  \"description\": \"Descrição opcional\",\r\n  \"status\": \"to do\",\r\n  \"startDate\": \"2025-06-01T08:00:00.000Z\",\r\n  \"dueDate\": \"2025-06-05T17:00:00.000Z\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks/cmbbk74xy0000ts888t090ebw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"cmbbk74xy0000ts888t090ebw"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 Response",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Minha nova tarefa\",\r\n  \"description\": \"Descrição opcional\",\r\n  \"status\": \"to do\",\r\n  \"startDate\": \"2025-06-01T08:00:00.000Z\",\r\n  \"dueDate\": \"2025-06-05T17:00:00.000Z\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/cmbbk74xy0000ts888t090ebw",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"cmbbk74xy0000ts888t090ebw"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "274"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"112-WDjmq5Pl9BJBKypkEA2S5SlRjH8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 31 May 2025 02:25:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Tarefa excluída com sucesso\",\n    \"task\": {\n        \"id\": \"cmbbk74xy0000ts888t090ebw\",\n        \"clickupId\": \"86a92mnmn\",\n        \"title\": \"teste 123\",\n        \"description\": null,\n        \"status\": \"to do\",\n        \"startDate\": null,\n        \"dueDate\": null,\n        \"createdAt\": \"2025-05-31T01:34:29.041Z\",\n        \"updatedAt\": \"2025-05-31T01:38:06.989Z\"\n    }\n}"
+				},
+				{
+					"name": "404 Response",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Minha nova tarefa\",\r\n  \"description\": \"Descrição opcional\",\r\n  \"status\": \"to do\",\r\n  \"startDate\": \"2025-06-01T08:00:00.000Z\",\r\n  \"dueDate\": \"2025-06-05T17:00:00.000Z\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/cmbbk74xy0000ts888t090ebw",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"cmbbk74xy0000ts888t090ebw"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"39-sSs730ORt+Xef1yD47k40/vlQPs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 31 May 2025 03:15:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Tarefa não encontrada ou já foi excluída\"\n}"
+				}
+			]
+		}
+	]
+}
