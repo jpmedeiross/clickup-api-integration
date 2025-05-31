@@ -82,3 +82,18 @@ export async function createTask(req, res) {
     res.status(500).json({ error: "Erro ao criar tarefa no ClickUp" })
   }
 }
+
+export async function deleteTask(req, res) {
+  const { id } = req.params
+
+  try {
+    const task = await prisma.task.delete({
+      where: { id }
+    })
+
+    res.json({ message: "Tarefa excluída com sucesso", task })
+  } catch (error) {
+    console.error("Erro ao excluir tarefa:", error.message)
+    res.status(500).json({ error: "Erro ao excluir tarefa" })
+  }
+}
