@@ -1,7 +1,7 @@
-import { Router } from "express"
+import express from "express"
 import { syncTasks } from "../controllers/taskController.js"
 
-const router = Router()
+const router = express.Router()
 
 router.get("/tasks", syncTasks)
 
