@@ -1,9 +1,9 @@
 import prisma from "../database/prismaClient.js"
-import { fetchTasksFromClickUp } from "../services/clickupService.js"
+import { fetchTasksFromClickup } from "../services/clickupService.js"
 
 export async function syncTasks(req, res) {
   try {
-    const clickupTasks = await fetchTasksFromClickUp()
+    const clickupTasks = await fetchTasksFromClickup()
 
     const upsertedTasks = await Promise.all(
       clickupTasks.map(async (task) => {
