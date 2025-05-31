@@ -1,5 +1,8 @@
 import prisma from "../database/prismaClient.js"
-import { fetchTasksFromClickup } from "../services/clickupService.js"
+import {
+  createTaskInClickup,
+  fetchTasksFromClickup
+} from "../services/clickupService.js"
 
 export async function syncTasks(req, res) {
   try {
@@ -36,5 +39,46 @@ export async function syncTasks(req, res) {
   } catch (error) {
     console.error(error.message)
     res.status(500).json({ error: "Erro ao sincronizar tarefas com o ClickUp" })
+  }
+}
+
+export async function createTask(req, res) {
+  const { title, description, status, startDate, dueDate } = req.body
+
+  if (!title) {
+    return res.status(400).json({ error: "O título é obrigatório." })
+  }
+
+  try {
+    const clickupTask = await createTaskInClickup({
+      title,
+      description,
+      status,
+      startDate,
+      dueDate
+    })
+
+    const task = await prisma.task.create({
+      data: {
+        clickupId: clickupTask.id,
+        title: clickupTask.name,
+        description: clickupTask.description || null,
+        status: clickupTask.status?.status || "to do",
+        startDate: clickupTask.start_date
+          ? new Date(Number(clickupTask.start_date))
+          : null,
+        dueDate: clickupTask.due_date
+          ? new Date(Number(clickupTask.due_date))
+          : null
+      }
+    })
+
+    res.status(201).json(task)
+  } catch (error) {
+    console.error(
+      "Erro ao criar tarefa:",
+      error.response?.data || error.message
+    )
+    res.status(500).json({ error: "Erro ao criar tarefa no ClickUp" })
   }
 }
