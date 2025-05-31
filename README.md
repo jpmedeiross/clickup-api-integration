@@ -31,7 +31,7 @@ API em Node.js que integra com a plataforma [ClickUp](https://clickup.com/) para
 
 - git clone https://github.com/seu-usuario/clickup-api.git
 
-- cd clickup-api 
+- cd clickup-api-integration 
 
 ### 2. Instale as dependências
 
@@ -39,13 +39,17 @@ API em Node.js que integra com a plataforma [ClickUp](https://clickup.com/) para
 
 ### 3. Crie um .env na raiz do projeto
 
-![Demonstração da API](./public/exampleEnv.png)
+![Demonstração da API](./public/envEx2.png)
 
-### 4. Execute as migrations
+### 6. Gere o prisma client
+
+- npx prisma generate
+
+### 5. Execute as migrations
 
 - npx prisma migrate dev --name init
 
-### 5. Inicie o servidor
+### 6. Inicie o servidor
 
 - npm run start
 
