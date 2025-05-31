@@ -87,6 +87,16 @@ export async function deleteTask(req, res) {
   const { id } = req.params
 
   try {
+    const existingTask = await prisma.task.findUnique({
+      where: { id }
+    })
+
+    if (!existingTask) {
+      return res
+        .status(404)
+        .json({ message: "Tarefa não encontrada ou já foi excluída" })
+    }
+
     const task = await prisma.task.delete({
       where: { id }
     })
